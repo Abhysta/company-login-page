@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-responsive">
+        <button onclick="setInActive()" class="btn-sign-in" disabled>
+          Sign In
+        </button>
+        <button onclick="setActive()" class="btn-sign-up">Sign Up</button>
+      </div>
+      <div class="text-content">
+        <div class="text-container">
+          <div class="toggle-panel toggle-left">
+            <div class="sign-in-text">
+              <button onclick="setInActive()">Sign In</button>
+              <p>Hey lets login to make a something</p>
+            </div>
+          </div>
+
+          <div class="toggle-panel toggle-right">
+            <div class="sign-up-text">
+              <button onclick="setActive()">Sign Up</button>
+              <p>Hey lets make account to make something</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-container form-signIn">
+        <form class="form-content">
+          <h1>Welcome Back</h1>
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+      <div class="form-container form-signUp">
+        <form class="form-content">
+          <h1>Lets Make Account</h1>
+          <input type="text" placeholder="username" />
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <input type="password" placeholder="password" />
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
